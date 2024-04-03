@@ -134,6 +134,12 @@ input[type="checkbox"]:focus + label {
     top: -7vh 
 }
 
+model-viewer{
+    width: 100%;
+    height: 600px;
+    
+}
+
 /* PAD VERSION */
 /* PAD VERSION */
 /* PAD VERSION */
