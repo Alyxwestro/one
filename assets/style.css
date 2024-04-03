@@ -1,0 +1,144 @@
+:root {
+    --typography--header: 'Soyuz Grotesk', sans-serif;
+    --font--display: 'Familjen Grotesk', sans-serif;
+    --font--text: 'Sometimes Times', serif;
+
+    --font--size: 20px;
+    --scale: 2;
+    --spacing: 10px;
+    --baseline: 30px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(219,224,220);
+    background: linear-gradient(0deg, rgba(219,224,220,1) 47%, rgba(189,195,191,1) 49.5%, rgba(255,255,255,1) 50%, rgba(189,195,191,1) 50.5%, rgba(219,224,220,1) 53%);  
+    margin: var(--spacing); 
+}
+
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+h1 {
+    font-family: var(--typography--header);
+    color: white;
+    font-size: var(--font--size);
+}
+
+.home {
+    background: black;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding:10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.home:hover {
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
+
+.dropdown {
+    width: 300px;
+    margin-top: var(--spacing);
+    margin-left: 20px;
+    position: relative;
+}
+  
+.time {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: transform ease-in-out 0.3s;
+}
+  
+.dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    visibility: hidden;
+    transform: translateY(-1em);
+    transition: transform ease 0.3s;
+      background: black;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding: var(--spacing);
+  }
+  
+input[type="checkbox"]:checked ~ .dropdown-content {
+    visibility: visible;
+    transform: translateY(0);
+}
+  
+.dropdown-content li {
+    color: white;
+    font-size: 20px;
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+  
+input[type="checkbox"]:checked + label > .arrow {
+    transform: rotate(180deg);
+}
+  
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+  
+input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
+
+/* MAIN SCREEN */
+/* MAIN SCREEN */
+/* MAIN SCREEN */
+.circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: black solid 1px;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+
+
+}
+
+/* PAD VERSION */
+/* PAD VERSION */
+/* PAD VERSION */
+@media (min-width: 768px){
+
+}
+
+
+/* DESKTOP VERSION */
+/* DESKTOP VERSION */
+/* DESKTOP VERSION */
+@media (min-width: 1024px){
+
+    li{
+        font-size: 20px;
+    }
+}
