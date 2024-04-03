@@ -33,7 +33,7 @@
             <div class="mainscreen">
                 <section class="circle-1">
 
-                    <canvas id="canvas" width="600" height="600"></canvas>
+                    <canvas id="canvas" width="700" height="700"></canvas>
                         <script type="importmap">
                             {
                                 "imports": {
@@ -51,8 +51,8 @@
                             let scene = new THREE.Scene();
                             let renderer = new THREE.WebGLRenderer({
                                 canvas : document.querySelector('#canvas'),
-                                antialias : true
-                                // alpha : true
+                                antialias : true,
+                                alpha : true
                             });
                             renderer.outputEncoding = THREE.sRGBEncoding;
 
