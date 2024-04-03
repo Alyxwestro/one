@@ -1,0 +1,8 @@
+Model Information:
+* title:	European Female Base Mesh Free
+* source:	https://sketchfab.com/3d-models/european-female-base-mesh-free-752e9f8ec4fa4c6797c19ed44bfbf355
+* author:	SculptCuteness (https://sketchfab.com/SculptCuteness)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
