@@ -33,7 +33,7 @@
             <div class="mainscreen">
                 <section class="circle-1">
 
-                    <canvas id="canvas" width="500" height="500"></canvas>
+                    <canvas id="canvas" width="600" height="600"></canvas>
                         <script type="importmap">
                             {
                                 "imports": {
@@ -60,15 +60,17 @@
                             let light = new THREE.DirectionalLight(0xffff00, 10);
                             scene.add(light);
 
+                            const controls = new OrbitControls( camera, renderer.domElement );
+                            controls.update();
+
                             let loader = new GLTFLoader();
                             loader.load('female/scene.gltf', function(gltf){
                                 scene.add(gltf.scene);
                                 renderer.render(scene, camera);
                                 function animate(){
-                                    requestAnimationFrame(animate)
-                                    gltf.scene.rotation.y +=0.1;
-                                    gltf.scene.rotation.x +=0.1
-                                    renderer.render(scene, camera);
+                                    requestAnimationFrame( animate );
+                                    controls.update();
+	                                renderer.render( scene, camera );
                                 }
                                 animate()
                             });
