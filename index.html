@@ -70,7 +70,7 @@
                             let loader = new GLTFLoader();
                             loader.load('shiba/scene.gltf', function(gltf){
                                 scene.add(gltf.scene);
-                                render.render(scene, camera);
+                                renderer.render(scene, camera);
                             });
 
                             
